@@ -22,7 +22,7 @@
           <div>
             <header
               id="header"
-              class="font-ocean min-h-[70px] flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0 border-b-[1px] border-solid border-gray-600"
+              class="font-ocean z-50 flex min-h-[70px] w-full flex-wrap border-b-[1px] border-solid border-gray-600 bg-black py-3 text-sm sm:flex-nowrap sm:justify-start sm:py-0"
             >
               <nav
                 class="relative w-full px-4 mx-auto max-w-screen-2xl sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
@@ -33,18 +33,18 @@
                     class="flex items-center justify-center gap-2 text-xl font-semibold text-white"
                     aria-label="Brand"
                     href="/"
-                  >
-                    <img
+                    ><img
                       src="https://yralcgckodgemrozhvhn.supabase.co/storage/v1/object/public/websites-data/logo/M0P5KHJcpCSsakaf"
                       alt=""
-                      class="w-[40px] rounded-lg flex-1"
+                      class="w-[40px] flex-1 rounded-lg"
                     />
                     <p class="text-[16px] md:text-[20px]">La Cuoca Calabrese</p>
                   </a>
                   <div class="sm:hidden">
                     <button
+                      id="menu-toggle"
                       type="button"
-                      class="flex items-center justify-center text-sm font-semibold text-blue-500 border border-blue-500 rounded-lg hs-collapse-toggle size-9 gap-x-2 hover:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1"
+                      class="flex items-center justify-center text-sm font-semibold text-blue-500 border border-blue-500 rounded-lg hs-collapse-toggle size-9 gap-x-2 hover:border-blue-500 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1"
                       data-hs-collapse="#navbar-collapse-with-animation"
                       aria-controls="navbar-collapse-with-animation"
                       aria-label="Toggle navigation"
@@ -88,30 +88,25 @@
                   class="hidden overflow-hidden transition-all duration-300 hs-collapse sm:block"
                 >
                   <div
-                    class="flex flex-col mt-5 gap-y-4 gap-x-0 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7"
+                    class="flex flex-col mt-5 gap-x-0 gap-y-4 sm:mt-0 sm:flex-row sm:items-center sm:justify-end sm:gap-x-7 sm:gap-y-0 sm:ps-7"
                   >
                     <a
                       class="font-medium text-white hover:text-blue-500 sm:py-6"
                       href="/"
-                      >Home
-                    </a>
-                    <a
+                      >Home</a
+                    ><a
                       class="font-medium text-white hover:text-blue-500 sm:py-6"
                       href="/about.html"
-                      >About Us
-                    </a>
-                    <a
+                      >About Us</a
+                    ><a
                       class="font-medium text-white hover:text-blue-500 sm:py-6"
                       href="/curriculum.html"
-                    >
-                      Curriculum
-                    </a>
-                    <a
+                      >Curriculum</a
+                    ><a
                       class="font-medium text-white hover:text-blue-500 sm:py-6"
                       href="/gallery.html"
+                      >Gallery</a
                     >
-                      Gallery
-                    </a>
                   </div>
                 </div>
               </nav>
@@ -406,5 +401,6 @@
         </div>
       </div>
     </main>
+    <script src="nav-toggle.js" defer></script>
   </body>
 </html>
